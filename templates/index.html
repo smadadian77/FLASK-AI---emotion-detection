@@ -1,32 +1,53 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="./static/mywebscript.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to AI Toolkit</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <style>
-        .center-heading {
+        body {
+            background: linear-gradient(to right, #f6d365, #fda085);
+            color: #333;
+        }
+
+        .container {
+            border: 2px solid #f6d365;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .btn-primary {
+            background-color: #f6d365;
+            border-color: #f6d365;
+            margin-bottom: 10px;
+        }
+
+        .btn-primary:hover {
+            background-color: #f6d365;
+            border-color: #f6d365;
+        }
+
+        .footer {
             text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="card">
-        <div class="card-body">
-            <h1 class="center-heading">NLP - Sentiment Analysis using BERT</h1> 
-            <div style="padding: 25px 25px 25px 25px;">
-            <h2 class="mb-3">
-                <label class="form-label">Please enter the text to be analyzed</label>
-                <input type="textarea" class="form-control" id="textToAnalyze">
-            </h2>
+    <div class="container">
+        <h1 class="text-center">Welcome to AI Toolkit</h1>
+        <a href="{{ url_for('keyword_finder') }}" class="btn btn-primary btn-block">Keyword Finder</a>
+        <a href="{{ url_for('text_summarizer') }}" class="btn btn-primary btn-block">Text Summarizer</a>
 
-            <div style="padding: 25px 25px 25px 25px;">
-                <button onclick="RunSentimentAnalysis()" class="btn btn-secondary">Run Sentiment Analysis</button>
-            </div>
-            <div style="padding: 25px 25px 25px 25px;"></div>
-            <h2 class="mb-3">
-                <label class="form-label">Result of Sentiment Analysis</label>
-            </h2>
+    </div>
 
-            <div id="system_response" style="padding: 25px 25px 25px 25px;"></div>
-        </div>
+    <div class="footer">
+        <p>All rights reserved for Mohammadsajjad Madadian | 2024</p>
     </div>
 </body>
+</html>
+
