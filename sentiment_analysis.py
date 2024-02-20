@@ -41,4 +41,4 @@ def text_summarizer(text):
     return response.text
 
 
-print(text_summarizer("To display the histogram of keyword importance below the insert text box, you can modify the HTML page to include a new div element where the histogram will be displayed. You can use JavaScript to parse the JSON data returned by the Flask function and create the histogram dynamically. Here's the modified HTML code:"))
+print(text_summarizer("In the heart of a bustling city, amidst towering skyscrapers and bustling streets, lies a hidden oasis of tranquility. Here, time slows down, and the gentle rustling of leaves in the breeze replaces the constant hum of traffic. A quaint little café nestled in a quiet corner serves aromatic coffee and freshly baked pastries, where locals and tourists alike gather to savor moments of respite from the chaos outside"))
